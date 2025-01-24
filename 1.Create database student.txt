@@ -1,0 +1,33 @@
+1.CREATE DATABASE student;
+ 
+2.show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| omega1             |
+| omega345           |
+| performance_schema |
+| student            |
+| sys                |
++--------------------+
+7 rows in set (0.08 sec)
+
+3.mysql> use student ;
+  Database changed
+
+4.mysql> CREATE TABLE Persons (
+    ->     PersonID int,
+    ->     LastName varchar(255),
+    ->     FirstName varchar(255),
+    ->     Address varchar(255),
+    ->     City varchar(255)
+    ->     );
+
+5.mysql> show tables;
++-------------------+
+| Tables_in_student |
++-------------------+
+| persons           |
++-------------------+
